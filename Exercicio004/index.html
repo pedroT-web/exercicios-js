@@ -11,16 +11,19 @@
 </head>
 
 <body>
-    <form>
-        <section class="container_forms">
-            <label>Qual o seu Nome? </label>
-            <input type="text" id="input_nome"><br>
-            <label>Qual a sua Idade? </label>
-            <input type="number" id="input_idade">
-        </section>
-
-        <button onclick="fnValidarIdadeCNH()">Consultar</button>
-    </form>
+    <section class="container_corpo_forms">
+        <form>
+            <main class="container corpo_forms">
+                <section class="container_forms">
+                    <label>Qual o seu Nome? </label>
+                    <input class="inputs" type="text" id="input_nome"><br>
+                    <label>Qual a sua Idade? </label>
+                    <input class="inputs" type="number" id="input_idade">
+                    <button class="botao" onclick="fnValidarIdadeCNH()">Consultar</button>
+                </section>
+            </main>
+        </form>
+    </section>
 
     <script src="app.js"></script>
 </body>

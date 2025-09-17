@@ -1,6 +1,6 @@
 function fnValidarIdadeCNH(){
-    const verificarIdade = document.getElementById('input_idade').value
-    const nomeUsuario = document.getElementById('input_nome').value
+    let verificarIdade = document.getElementById('input_idade').value
+    let nomeUsuario = document.getElementById('input_nome').value
 
     if(verificarIdade >= 18){
         alert(nomeUsuario + " Você Pode tirar a CNH")
