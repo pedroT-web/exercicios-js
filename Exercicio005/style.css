@@ -1,0 +1,41 @@
+/* CSS - Cascading Style Sheet */
+/*       Folha de estilo em cascata */
+/* Seletor 
+tag --> body
+id --> #foto
+classe --> .nomeClasse
+*/
+body{
+    /* Propriedade : valor */
+    color: #ffffff;
+    background-color: #de62ee;
+}
+
+#foto{
+    width: 150px;
+    border-radius: 10px;
+    border-top: 5px double red;
+    border-bottom: 3px solid blue;
+    border-right: 7px dotted fuchsia;
+    border-left: 10px dashed tan;
+    /*estilos: solid, dashed, dotted, double */
+}
+
+/* 
+cores originais:
+texto: #ffffff;
+fundo: #de62ee;
+
+cor dia:
+texto: #ffffff
+fundo: #3ca6ec
+
+cor tarde:
+texto: #034d64
+fundo: #ec8208
+
+cor noite: 
+texto: #ffffff
+fundo: #09026e
+
+*/
