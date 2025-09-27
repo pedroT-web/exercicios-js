@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="color" onblur="fnCor(this.value)">
+    <button type="button" onclick="fnCor('blue')">Fundo Azul</button>
+    <button type="button" onclick="fnCor('red')">Fundo Vermelho</button>
+    <button type="button" onclick="fnCor('orange')">Fundo Laranja</button>
+
+    <script>
+        function fnCor(cor){
+            document.body.style.background = cor;
+        }
+    </script>
+</body>
+</html>

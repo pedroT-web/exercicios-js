@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 010</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Exercício 010</h1>
+    <blockquote>"For more, Run Forest, Run!"</blockquote>
+    <p>10 Calcular a média de N alunos.</p>
+    <hr>
+    <form id="painel_formulario">
+        <label>Nome</label><br>
+        <input id="nome"><br>
+        <label>Nota 1</label><br>
+        <input type="number" id="nota1"><br>
+        <label>Nota 2</label><br>
+        <input type="number" id="nota2"><br>
+        <label>Nota 3</label><br>
+        <input type="number" id="nota3"><br>
+        <label>Nota 4</label><br>
+        <input type="number" id="nota4"><br>
+        <button class="botaoCalc" onclick="fnCalcularMedia()" type="button">Calcular</button>
+    </form>
+    <div id="painel_resultado">
+        <h3>Média: <span id="nome_resultado"></span> - <span id="media"></span></h3>
+        <button class="botaoResul" type="button" onclick="fnExibir('formulario')">Calcular a média de outro aluno</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
