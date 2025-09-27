@@ -11,7 +11,7 @@ function fnCalcularMedia() {
 
     document.getElementById("nome_resultado").innerHTML = nome
     document.getElementById("media").innerHTML = media.toFixed(1)
-    limpar()
+    fnlimparFormulario()
     fnExibir("resultado")
 }
 
@@ -27,10 +27,6 @@ function fnExibir(painel_exibir) {
 }
 
 
-function limpar() {
-    nome = document.getElementById("nome").value = ""
-    n1 = document.getElementById("nota1").value = ""
-    n2 = document.getElementById("nota2").value = ""
-    n3 = document.getElementById("nota3").value = ""
-    n4 = document.getElementById("nota4").value = ""
+function fnlimparFormulario() {
+    document.getElementById("painel_formulario").reset()
 }
