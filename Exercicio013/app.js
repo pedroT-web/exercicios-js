@@ -6,27 +6,16 @@ function fnSalvarVeiculo() {
     veiculos.push(document.getElementById("veiculo").value)
 }
 
-function fnListarVeiculos() {
-    // console.dir(numeroDeVagas)
-    // console.dir(veiculos)
-
-    // let i = 0;
-
-    // while (i < veiculos.length) {
-
-    // }
-
-    // for(declaração do contador; condição; incremento){}
-    for (let i = 0; i < veiculos.length; i++) {
-        document.getElementById("tabela_corpo").innerHTML = ` 
-        <tr>
-        <td> ${numeroDeVagas[i]} </td> <td> ${veiculos[i]} </td>
-        `
-        i++
+function fnListarVeiculo() {
+    document.getElementById('tabela_veiculos').innerHTML = ""
+    for(let i =0; i < veiculos.length; i++){
+        document.getElementById("tabela_veiculos").innerHTML += `<tr>`
+        document.getElementById("tabela_veiculos").innerHTML += `<td> ${numeroDeVagas[i]} </td><td>${veiculos[i]}</td>`
+        document.getElementById("tabela_veiculos").innerHTML += `<tr>`
     }
 }
 
 function fnLimpar() {
-
+    document.getElementById("form_veiculos").reset()
 }
 

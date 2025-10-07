@@ -18,39 +18,36 @@
     <div class="container">
         <h1>Exercício 013</h1>
         <blockquote>"Quem com ferro fere, com ferro será ferido!!"</blockquote>
-        <hr>
-        <form class="border border-info border-1 rounded p-3 m-5">
+        <p>13 Armazenando lista de carros de um estacionamento</p>        <hr>
+        <form class="border border-info border-1 rounded p-3 m-5" id="form_veiculos">
             <div class="row mb-3">
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <label class="form-label">Número de Vagas</label>
                     <input class="form-control" id="numero_vaga">
                 </div>
 
-                <div class="col">
+                <div class="col-12 col-md-6">
                     <label class="form-label">Veículo</label>
                     <input class="form-control" id="veiculo">
                 </div>
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <button type="button" class="btn btn-success w-50" onclick="fnSalvarVeiculo();fnListarVeiculos()">SALVAR</button>
+                    <button type="button" class="btn btn-success w-50"
+                        onclick="fnSalvarVeiculo();fnListarVeiculo();fnLimpar()">SALVAR</button>
                 </div>
             </div>
         </form>
         <div class="row">
             <div class="col">
-                <table class="table w-75 m-auto" >
+                <table class="table w-75 m-auto">
                     <thead>
                         <tr>
                             <th>Número de Vagas</th>
                             <th>Veículo</th>
                         </tr>
                     </thead>
-                    <tbody id="tabela_corpo">
-                        <tr>
-                            <td>001</td>
-                            <td>Marea EAH-2021</td>
-                        </tr>
+                    <tbody id="tabela_veiculos">
                     </tbody>
                 </table>
             </div>
