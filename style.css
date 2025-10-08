@@ -1,0 +1,11 @@
+.cartao {
+    min-height: 100%;
+    background-color: #006691 !important;
+    transition: transform 0.5s ease;
+}
+
+.cartao:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 7px 12px 1px #006691;
+    transition: 0.5s ease;
+}
