@@ -1,5 +1,21 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.contaniner_linhas {
+    border-radius: 15px;
+    box-shadow: 1px 2px 8px 2px #808080;
+    background-color:  #a0a0a0;
+}
+
+.titulo {
+    margin-top: 30px;
+    color: #006691;
+}
+
 .cartao {
     min-height: 100%;
+    max-height: 100%;
     background-color: #006691 !important;
     transition: transform 0.5s ease;
 }
@@ -8,4 +24,11 @@
     transform: translateY(-15px);
     box-shadow: 0px 7px 12px 1px #006691;
     transition: 0.5s ease;
+}
+
+.container_conteudo>p {
+    min-height: 100px;
+    max-height: 100px;
+
+    margin-bottom: 25px;
 }
