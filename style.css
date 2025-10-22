@@ -6,6 +6,7 @@ body {
     border-radius: 15px;
     box-shadow: 1px 2px 8px 2px #808080;
     background-color:  #a0a0a0;
+    margin-bottom: 50px;
 }
 
 .titulo {
@@ -16,13 +17,13 @@ body {
 .cartao {
     min-height: 100%;
     max-height: 100%;
-    background-color: #006691 !important;
+    background-color: #666666 !important;
     transition: transform 0.5s ease;
 }
 
 .cartao:hover {
     transform: translateY(-15px);
-    box-shadow: 0px 7px 12px 1px #006691;
+    box-shadow: 0px 7px 12px 1px #383838;
     transition: 0.5s ease;
 }
 
