@@ -11,7 +11,7 @@ function fnSalvar() {
     }
 
     contatos.push(umContato);
-    console.dir(contatos)
+    // console.dir(contatos)
 
     fnListar()
 }
@@ -28,7 +28,7 @@ function fnListar() {
                 <p class="card-title">Telefone: ${umContato.telefone} </p>
                 <p class="card-title">E-mail: ${umContato.email}</p>
                 <div class="text-end">
-                <button class="btn btn-danger">Deletar</button>
+                <button type="button" onclick="fnExcluir(${i})" class="btn btn-danger">Deletar</button>
                 </div>
             </div>
         </div>        
@@ -38,11 +38,18 @@ function fnListar() {
     document.getElementById("listaDeContatos").innerHTML = dados
 }
 
-function fnExcluir() {
+function fnExcluir(indice) {
+    contatos.splice(indice, 1)
+    fnListar()
 
+}
+
+function fnLimpar() {
+    document.getElementById("formulario").reset()
 }
 
 //  addEventListener --> vai estar ouvindo o evento que acontece
 document.getElementById("btnSalvar").addEventListener('click', function () {
     fnSalvar()
+    fnLimpar()
 })
