@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 017</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <section class="container p-5">
+        <div
+            class="row bg-white border border-black rounded p-5 linha_pagina d-flex flex-column align-items-center justify-content-center">
+            <div class="col d-flex flex-column align-items-center justify-content-center">
+                <form action="" class="col-6">
+                    <label for="" class="text-black form-label">Nome do filme</label>
+                    <input class="form-control border border-black" type="text" id="nomeFilme"
+                        placeholder="Mauricio de Souza: O Filme">
+
+                    <label class="text-black form-label mt-4">Foto de capa</label>
+                    <input class="form-control border border-black" type="text" id="fotoCapa"
+                        placeholder="https://encrypted-tbn0.gstatic.com/images?">
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="" class="text-black form-label mt-4">Foto de capa</label>
+                            <input class="form-control border border-black" type="number" id="ano" placeholder="2025">
+                        </div>
+                        <div class="col">
+                            <label for="" class="text-black form-label mt-4">Avaliação</label>
+                            <select name="" id="avaliacao" class="form-select border border-black">
+                                <option value="Sem Avaliação"></option>
+                                <option value="⭐">⭐</option>
+                                <option value="⭐⭐">⭐⭐</option>
+                                <option value="⭐⭐⭐">⭐⭐⭐</option>
+                                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="" class="text-black form-label mt-4">Trailer</label>
+                    <input class="form-control border border-black" type="text" id="trailer"
+                        placeholder="https://www.youtube.com/watch">
+                    <div class="row">
+                        <div class="col">
+                            <label for="" class="text-black form-label mt-4">Gênero</label>
+                            <input class="form-control border border-black" type="text" id="genero" placeholder="Ação">
+                        </div>
+                        <div class="col">
+                            <label for="" class="text-black form-label mt-4">Duração</label>
+                            <input class="form-control border border-black" type="text" id="duracao"
+                                placeholder="1h45min">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="" class="text-black form-label mt-4">Descrição</label>
+                        <textarea class="form-control border border-black" type="text" id="descricao" rows="6"
+                            placeholder="Mauricio de Sousa: O Filme reconta a vida do quadrinista mais importante do Brasil, desde sua infância, a relação com os pais e os primeiros passos e momentos marcantes que tornaram realidade o seu sonho de se tornar desenhista. Criador de Turma da Mônica e outros"></textarea>
+                    </div>
+                    <button class="btn btn-primary mt-5 w-100" type="button" id="botaoSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-between" id="listaDeContatos">
+
+        </div>
+    </section>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
