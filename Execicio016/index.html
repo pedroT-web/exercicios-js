@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 16</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center p-4" style="min-height: 100vh;background-color: #dfdfdf;min-width: 100%">
+        <section class="bg-white rounded p-4" style="min-width: 40%;">
+            <div>
+                <label class="fs-6 mb-2">Valor da Conta</label>
+                <input id="valorConta" type="text" class="rounded form-control">
+
+                <label class="fs-6 my-2">Valor %</label>
+                <input id="porcentagem" type="text" class="rounded form-control">
+
+                <label class="fs-6 my-2">Função</label>
+                <select id="tipoAcao" class="form-select">
+                    <option value="" selected disabled></option>
+                    <option value="acrescimo">Acréscimo</option>
+                    <option value="desconto">Desconto</option>
+                </select>
+            </div>
+
+            <div class="mt-5">
+                <label>Valor á pagar</label><br>
+                <label id="valorFinal" class="fs-4 mb-5"></label>
+            </div>
+
+            <button type="button" class="btn btn-outline-primary w-100" id="btnCalcular">Calcular</button>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
